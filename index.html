@@ -5,47 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Todo List</title>
   </head>
 
   <body>
     <div class="container">
       <form action="">
-        <input type="text" placeholder="Enter task..." />
-        <button class id="addTask">+</button>
+        <input type="text" placeholder="Enter task..." id="enterTask" />
+        <button class id="addTask" type="submit">+</button>
       </form>
-      <ul class="tasks">
+      <ul class="tasks" id="tasksContainer">
         <li class="task">
           <div class="content">
-            <input type="checkbox" name="" id="" />
+            <input type="checkbox" name="" id="check" />
             <p>call mom</p>
           </div>
-          <i class="fa fa-trash"></i>
+          <i class="fa fa-trash delete" id="deleteIcon"></i>
         </li>
-        <li class="task" >
+        <li class="task">
           <div class="content">
-            <input type="checkbox" name="" id="" />
+            <input type="checkbox" name="" id="check" />
             <p>Pick up laundry</p>
           </div>
-          <i class="fa fa-trash"></i>
+          <i class="fa fa-trash delete" id="deleteIcon"></i>
         </li>
-        <li class="task" >
-            <div class="content">
-              <input type="checkbox" name="" id="" />
-              <p>Meeting with the new team</p>
-            </div>
-            <i class="fa fa-trash"></i>
-          </li>
-          <li class="task" >
-            <div class="content">
-              <input type="checkbox" name="" id="" />
-              <p>Lunch</p>
-            </div>
-            <i class="fa fa-trash"></i>
-          </li>
+        <li class="task">
+          <div class="content">
+            <input type="checkbox" name="" id="check" />
+            <p>Meeting with the new team</p>
+          </div>
+          <i class="fa fa-trash delete" id="deleteIcon"></i>
+        </li>
+        <li class="task">
+          <div class="content">
+            <input type="checkbox" name="" id="check" />
+            <p>Lunch</p>
+          </div>
+          <i class="fa fa-trash delete" id="deleteIcon"></i>
+        </li>
       </ul>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
